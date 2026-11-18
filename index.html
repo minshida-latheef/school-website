@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenfield International School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">Greenfield <span>School</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">&#9776;</button>
+      <nav id="navLinks" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#academics">Academics</a>
+        <a href="#notices">Notices</a>
+        <a href="#admissions" class="btn-nav">Admissions</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Inspiring Young Minds for a Brighter Future</h1>
+      <p>Holistic education from Kindergarten to Grade 12 with modern labs, sports, and dedicated faculty.</p>
+      <a href="#admissions" class="btn-primary">Apply for 2026–27</a>
+    </div>
+  </section>
+
+  <!-- About & Animated Stats -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Our School</h2>
+      <p class="section-subtitle">Established in 1998, we foster curiosity, leadership, and academic excellence.</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3 class="counter" data-target="1800">0</h3>
+          <p>Students Enrolled</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="counter" data-target="120">0</h3>
+          <p>Qualified Teachers</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="counter" data-target="99">0</h3>
+          <p>Pass Percentage (%)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academics -->
+  <section id="academics" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Academic Programs</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Primary Wing (Grades 1–5)</h3>
+          <p>Activity-based foundational learning focused on literacy, numeracy, and creativity.</p>
+        </div>
+        <div class="card">
+          <h3>Middle School (Grades 6–8)</h3>
+          <p>Inquiry-driven curriculum introducing STEM labs, coding, languages, and arts.</p>
+        </div>
+        <div class="card">
+          <h3>Senior Secondary (Grades 9–12)</h3>
+          <p>Specialized Science, Commerce, and Humanities streams with career guidance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filterable Notice Board -->
+  <section id="notices" class="section">
+    <div class="container">
+      <h2 class="section-title">Notice Board</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="exam">Exams</button>
+        <button class="filter-btn" data-filter="event">Events</button>
+      </div>
+      <div class="notice-list" id="noticeList">
+        <div class="notice-item" data-category="exam">
+          <span class="badge exam">Exam</span>
+          <h4>Annual Term II Exam Timetable Released</h4>
+          <p>Date: November 25, 2026 — Download schedules from the student portal.</p>
+        </div>
+        <div class="notice-item" data-category="event">
+          <span class="badge event">Event</span>
+          <h4>Inter-School Science & Robotics Fair</h4>
+          <p>Date: December 5, 2026 — Open to all students from Grades 6 to 12.</p>
+        </div>
+        <div class="notice-item" data-category="event">
+          <span class="badge event">Event</span>
+          <h4>Annual Sports Day Trials</h4>
+          <p>Date: December 12, 2026 — Registration closes this Friday.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions Inquiry Form -->
+  <section id="admissions" class="section bg-light">
+    <div class="container form-container">
+      <h2 class="section-title">Admissions Inquiry</h2>
+      <form id="admissionForm" novalidate>
+        <div class="form-group">
+          <label for="studentName">Student Full Name</label>
+          <input type="text" id="studentName" placeholder="Enter student name" required />
+        </div>
+        <div class="form-group">
+          <label for="grade">Applying For Grade</label>
+          <select id="grade" required>
+            <option value="">Select a grade</option>
+            <option value="Kindergarten">Kindergarten</option>
+            <option value="Grades 1-5">Grades 1–5</option>
+            <option value="Grades 6-8">Grades 6–8</option>
+            <option value="Grades 9-12">Grades 9–12</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="parentEmail">Parent Email</label>
+          <input type="email" id="parentEmail" placeholder="parent@example.com" required />
+        </div>
+        <button type="submit" class="btn-primary full-width">Submit Application</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Greenfield International School. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
