@@ -74,7 +74,7 @@ This project is free to use and modify for educational and personal purposes.
 
 
 
-\[click to view](https://minshida-latheef.github.io/school-website/)
+[click to view](https://minshida-latheef.github.io/school-website/)
 
 
 
